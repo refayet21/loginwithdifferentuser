@@ -4,7 +4,9 @@ class Routes {
     return SPLASH;
   }
 
+  static const GENERALUSER = '/generaluser';
   static const HOME = '/home';
-  static const SPLASH = '/splash';
   static const LOGIN = '/login';
+  static const SPLASH = '/splash';
+  static const DOUSER = '/douser';
 }
