@@ -7,9 +7,21 @@ import 'package:multi_login/widgets/Drawer/reuseable_drawer.dart';
 class AdminDrawer extends StatelessWidget {
   final List<DrawerMenuItem> drawerItems = [
     DrawerMenuItem(
-        title: 'Home', routeName: Routes.GENERALUSER, icon: Icons.dashboard),
+        title: 'Home', routeName: Routes.HOME, icon: Icons.dashboard),
     DrawerMenuItem(
-        title: 'About', routeName: Routes.GENERALUSER, icon: Icons.person),
+        title: 'Add Do User', routeName: Routes.ADDUSER, icon: Icons.add),
+    DrawerMenuItem(
+        title: 'Add General User',
+        routeName: Routes.ADMIN_ADDGENUSER,
+        icon: Icons.usb),
+    DrawerMenuItem(
+        title: 'Add Product ',
+        routeName: Routes.ADMIN_ADDPRODUCT,
+        icon: Icons.production_quantity_limits),
+    DrawerMenuItem(
+        title: 'Add Vendor ',
+        routeName: Routes.ADMIN_ADDVENDOR,
+        icon: Icons.production_quantity_limits),
     DrawerMenuItem(
       title: 'Version No',
     ),

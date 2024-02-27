@@ -1,3 +1,7 @@
+export 'package:multi_login/infrastructure/navigation/bindings/controllers/adduser.controller.binding.dart'; 
+export 'package:multi_login/infrastructure/navigation/bindings/controllers/admin_addgenuser.controller.binding.dart'; 
+export 'package:multi_login/infrastructure/navigation/bindings/controllers/admin_addproduct.controller.binding.dart'; 
+export 'package:multi_login/infrastructure/navigation/bindings/controllers/admin_addvendor.controller.binding.dart'; 
 export 'package:multi_login/infrastructure/navigation/bindings/controllers/douser.controller.binding.dart'; 
 export 'package:multi_login/infrastructure/navigation/bindings/controllers/generaluser.controller.binding.dart'; 
 export 'package:multi_login/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 

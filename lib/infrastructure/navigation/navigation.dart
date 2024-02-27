@@ -51,5 +51,25 @@ class Nav {
       page: () => DouserScreen(),
       binding: DouserControllerBinding(),
     ),
+    GetPage(
+      name: Routes.ADDUSER,
+      page: () => const AdduserScreen(),
+      binding: AdduserControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.ADMIN_ADDGENUSER,
+      page: () => const AdminAddgenuserScreen(),
+      binding: AdminAddgenuserControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.ADMIN_ADDPRODUCT,
+      page: () => const AdminAddproductScreen(),
+      binding: AdminAddproductControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.ADMIN_ADDVENDOR,
+      page: () => const AdminAddvendorScreen(),
+      binding: AdminAddvendorControllerBinding(),
+    ),
   ];
 }
