@@ -19,7 +19,7 @@ class HomeScreen extends GetView<HomeController> {
         actions: [
           IconButton(
               onPressed: () {
-                box.remove('email');
+                box.remove('adminemail');
                 Get.offNamed(Routes.LOGIN);
               },
               icon: Icon(Icons.logout))

@@ -65,16 +65,19 @@ class SplashController extends GetxController {
   }
 
   void checkLoggedIn() {
-    var email = box.read('email');
-    if (email != null && email.isNotEmpty) {
-      alreadyLoggedIn.value = true;
-    }
+    var adminemail = box.read('adminemail');
+    var douseremail = box.read('douseremail');
+    var generalemail = box.read('generalemail');
 
     Timer(
       Duration(seconds: splashDurationSeconds),
       () {
-        if (alreadyLoggedIn.value) {
+        if (adminemail != null && adminemail.isNotEmpty) {
           Get.offNamed(Routes.HOME);
+        } else if (douseremail != null && douseremail.isNotEmpty) {
+          Get.offNamed(Routes.DOUSER);
+        } else if (generalemail != null && generalemail.isNotEmpty) {
+          Get.offNamed(Routes.GENERALUSER);
         } else {
           Get.offNamed(Routes.LOGIN);
         }

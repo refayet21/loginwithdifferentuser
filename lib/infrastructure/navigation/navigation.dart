@@ -43,12 +43,12 @@ class Nav {
     ),
     GetPage(
       name: Routes.GENERALUSER,
-      page: () => const GeneraluserScreen(),
+      page: () => GeneraluserScreen(),
       binding: GeneraluserControllerBinding(),
     ),
     GetPage(
       name: Routes.DOUSER,
-      page: () => const DouserScreen(),
+      page: () => DouserScreen(),
       binding: DouserControllerBinding(),
     ),
   ];

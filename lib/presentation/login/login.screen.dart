@@ -53,18 +53,24 @@ class LoginScreen extends GetView<LoginController> {
                 const SizedBox(height: 20.0),
                 OutlinedButton(
                   onPressed: () {
-                    box.write('email', emailController.text);
                     print('email is ${emailController.text}');
                     print('password is ${passwordController.text}');
-                    Get.offNamed(Routes.HOME);
+
+                    if (emailController.text == 'adminemail@gmail.com') {
+                      box.write('adminemail', emailController.text);
+                      Get.offNamed(Routes.HOME);
+                    } else if (emailController.text ==
+                        'douseremail@gmail.com') {
+                      box.write('douseremail', emailController.text);
+                      Get.offNamed(Routes.DOUSER);
+                    } else if (emailController.text ==
+                        'generalemail@gmail.com') {
+                      box.write('generalemail', emailController.text);
+                      Get.offNamed(Routes.GENERALUSER);
+                    }
                   },
                   child: const Text('Login'),
                 ),
-                ElevatedButton(
-                    onPressed: () {
-                      print(box.read('email'));
-                    },
-                    child: Text('Check getstorage'))
               ],
             ),
           ),
