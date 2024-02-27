@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:multi_login/infrastructure/navigation/routes.dart';
+import 'package:multi_login/widgets/admin_drawer.dart';
 
 import 'controllers/home.controller.dart';
 
@@ -13,6 +14,7 @@ class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AdminDrawer(),
       appBar: AppBar(
         title: const Text('HomeScreen'),
         centerTitle: true,
